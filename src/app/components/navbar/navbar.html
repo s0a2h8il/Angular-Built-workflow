@@ -1,0 +1,32 @@
+<nav
+    style="background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 0; position: sticky; top: 0; z-index: 50;">
+    <div class="container"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <a routerLink="/"
+            style="font-weight: 700; font-size: 1.25rem; color: var(--primary-color); text-decoration: none;">
+            GitHub Actions Guide
+        </a>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <a routerLink="/intro" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                style="color: var(--text-color); font-size: 0.95rem;">Intro</a>
+            <a routerLink="/basics" routerLinkActive="active"
+                style="color: var(--text-color); font-size: 0.95rem;">Basics</a>
+            <a routerLink="/structure" routerLinkActive="active"
+                style="color: var(--text-color); font-size: 0.95rem;">Structure</a>
+            <a routerLink="/angular-example" routerLinkActive="active"
+                style="color: var(--text-color); font-size: 0.95rem;">Angular CI</a>
+            <a routerLink="/scheduled" routerLinkActive="active"
+                style="color: var(--text-color); font-size: 0.95rem;">Scheduled</a>
+            <a routerLink="/secrets" routerLinkActive="active"
+                style="color: var(--text-color); font-size: 0.95rem;">Secrets</a>
+            <a routerLink="/faq" routerLinkActive="active" style="color: var(--text-color); font-size: 0.95rem;">FAQ</a>
+        </div>
+    </div>
+</nav>
+
+<style>
+    .active {
+        color: var(--primary-color) !important;
+        font-weight: 600;
+    }
+</style>

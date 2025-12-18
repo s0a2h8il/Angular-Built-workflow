@@ -1,0 +1,53 @@
+<h1>Angular CI Example</h1>
+<p class="mb-4">Here is the complete workflow we setup for this project.</p>
+
+<div class="card">
+    <div class="card-header">
+        <h2>.github/workflows/angular-ci.yml</h2>
+        <button type="button" class="copy-btn" (click)="copyCode(angularCiCode)">Copy</button>
+    </div>
+    <pre class="code-block"><code #angularCiCode class="language-yaml">name: Angular CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Angular App
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production
+        run: npm run build -- --configuration=production</code></pre>
+</div>
+
+<div class="card">
+    <h3>Key Takeaways</h3>
+    <ul>
+        <li><strong>npm ci:</strong> Always use <code>npm ci</code> instead of <code>npm install</code> in CI/CD for
+            faster, reliable builds.</li>
+        <li><strong>Caching:</strong> <code>actions/setup-node</code> has built-in caching for npm.</li>
+        <li><strong>LTS:</strong> Using 'lts/*' ensures we are on a stable Node.js version.</li>
+    </ul>
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+    <a routerLink="/structure" class="btn" style="background: #e5e7eb;">← Back</a>
+    <a routerLink="/scheduled" class="btn btn-primary">Next: Scheduled Workflows →</a>
+</div>

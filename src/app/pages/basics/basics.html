@@ -1,0 +1,44 @@
+<h1>Workflow Basics</h1>
+<p class="mb-4">Understanding the core terminology is the first step to mastering GitHub Actions.</p>
+
+<div class="card">
+    <h3>🔄 Workflow</h3>
+    <p>A configurable automated process that will run one or more jobs. Workflows are defined by a YAML file checked in
+        to your repository and will run when triggered by an event in your repository, or they can be triggered
+        manually, or at a defined schedule.</p>
+</div>
+
+<div class="card">
+    <h3>⚡ Event</h3>
+    <p>A specific activity in a repository that triggers a workflow run. For example, activity can originate from GitHub
+        when someone creates a pull request, pushes a commit, or opens an issue.</p>
+</div>
+
+<div class="card">
+    <h3>📦 Job</h3>
+    <p>A set of steps in a workflow that execute on the same runner. Each step is either a shell script that will be
+        executed, or an action that will be run. Steps are executed in order and are dependent on each other. Since each
+        step is executed on the same runner, you can share data from one step to another.</p>
+</div>
+
+<div class="card">
+    <h3>🏃 Step</h3>
+    <p>An individual task that can run commands or actions. A job contains a sequence of steps.</p>
+</div>
+
+<div class="card">
+    <h3>🎬 Action</h3>
+    <p>A custom application for the GitHub Actions platform that performs a complex but frequently repeated task. Use
+        actions to help reduce the amount of repetitive code that you write in your workflow files.</p>
+</div>
+
+<div class="card">
+    <h3>💻 Runner</h3>
+    <p>A server that runs your workflows when they're triggered. Each runner can run a single job at a time. GitHub
+        provides Ubuntu Linux, Microsoft Windows, and macOS runners to run your workflows.</p>
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+    <a routerLink="/intro" class="btn" style="background: #e5e7eb;">← Back</a>
+    <a routerLink="/structure" class="btn btn-primary">Next: Workflow Structure →</a>
+</div>

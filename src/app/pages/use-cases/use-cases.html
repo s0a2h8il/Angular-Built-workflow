@@ -1,0 +1,38 @@
+<h1>Common Use Cases</h1>
+<p class="mb-4">Here are some of the most common ways developers use GitHub Actions.</p>
+
+<div class="card">
+    <h2>🚀 Deployment</h2>
+    <p>Automatically deploy your code when changes are merged to the main branch. You can deploy to:</p>
+    <ul>
+        <li>GitHub Pages</li>
+        <li>AWS S3 / Firebase / Azure Static Web Apps</li>
+        <li>Docker Hub</li>
+        <li>Kubernetes</li>
+    </ul>
+    <pre class="code-block">
+<span style="color: #6a9955"># Example: Deploy to GitHub Pages</span>
+<span style="color: #569cd6">-</span> <span style="color: #569cd6">name</span>: <span style="color: #ce9178">Deploy</span>
+  <span style="color: #569cd6">uses</span>: <span style="color: #ce9178">peaceiris/actions-gh-pages@v3</span>
+  <span style="color: #569cd6">with</span>:
+    <span style="color: #569cd6">github_token</span>: <span style="color: #ce9178" ngNonBindable>${{
+        secrets.GITHUB_TOKEN }}</span>
+    <span style="color: #569cd6">publish_dir</span>: <span style="color: #ce9178">./dist/my-app</span>
+    </pre>
+</div>
+
+<div class="card">
+    <h2>🧪 Testing & Quality</h2>
+    <p>Ensure your code is always in a working state before merging.</p>
+    <ul>
+        <li>Run unit tests (Karma, Jasmine, Jest)</li>
+        <li>Run 2E2 tests (Cypress, Playwright)</li>
+        <li>Linting (ESLint, Prettier)</li>
+        <li>Code coverage reports</li>
+    </ul>
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+    <a routerLink="/secrets" class="btn" style="background: #e5e7eb;">← Back</a>
+    <a routerLink="/faq" class="btn btn-primary">Next: FAQ →</a>
+</div>

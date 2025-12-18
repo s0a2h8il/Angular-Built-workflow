@@ -1,0 +1,56 @@
+<h1>Frequently Asked Questions</h1>
+
+<div style="max-width: 800px; margin: 0 auto;">
+
+    <details class="card" style="cursor: pointer;">
+        <summary
+            style="font-weight: 700; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Is GitHub Actions free?
+            <span style="color: var(--primary-color);">+</span>
+        </summary>
+        <p class="mt-4">
+            Yes! It is completely free for public repositories. For private repositories, you get a certain amount of
+            free minutes per month (e.g., 2,000 minutes for Free accounts) based on your GitHub plan.
+        </p>
+    </details>
+
+    <details class="card" style="cursor: pointer;">
+        <summary
+            style="font-weight: 700; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Can I run workflows locally?
+            <span style="color: var(--primary-color);">+</span>
+        </summary>
+        <p class="mt-4">
+            Yes, you can use tools like <a href="https://github.com/nektos/act" target="_blank">act</a> to run your
+            GitHub Actions locally. It uses Docker to verify your workflows before pushing them to GitHub.
+        </p>
+    </details>
+
+    <details class="card" style="cursor: pointer;">
+        <summary
+            style="font-weight: 700; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            What are the limits?
+            <span style="color: var(--primary-color);">+</span>
+        </summary>
+        <p class="mt-4">
+            There are limits on concurrent jobs (20 for free plan) and job execution time (6 hours max per job).
+        </p>
+    </details>
+
+    <details class="card" style="cursor: pointer;">
+        <summary
+            style="font-weight: 700; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Can I build Docker images?
+            <span style="color: var(--primary-color);">+</span>
+        </summary>
+        <p class="mt-4">
+            Absolutely. GitHub Actions has excellent support for building and publishing Docker images to Docker Hub or
+            GitHub Container Registry (GHCR).
+        </p>
+    </details>
+
+</div>
+
+<div style="text-align: center; margin-top: 3rem;">
+    <a routerLink="/" class="btn btn-primary">Back to Home</a>
+</div>

@@ -1,0 +1,40 @@
+<h1>Scheduled Workflows</h1>
+<p class="mb-4">You can trigger workflows on a schedule using POSIX cron syntax.</p>
+
+<div class="card">
+    <h2>Syntax</h2>
+    <div class="code-block">
+        <span style="color: #569cd6">on</span>:
+        <span style="color: #569cd6">schedule</span>:
+        <span style="color: #6a9955"># Runs at 5:30 UTC every day</span>
+        <span style="color: #569cd6">-</span> <span style="color: #569cd6">cron</span>: <span style="color: #ce9178">'30
+            5 * * *'</span>
+    </div>
+
+    <h3>Cron Fields</h3>
+    <pre style="background: #f5f5f5; padding: 1rem; border-radius: 8px; font-family: monospace;">
+┌───────────── minute (0 - 59)
+│ ┌───────────── hour (0 - 23)
+│ │ ┌───────────── day of the month (1 - 31)
+│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+│ │ │ │ │
+* * * * *
+  </pre>
+</div>
+
+<div class="grid grid-2">
+    <div class="card">
+        <h3>Every 15 minutes</h3>
+        <code>*/15 * * * *</code>
+    </div>
+    <div class="card">
+        <h3>Every Monday at 1AM</h3>
+        <code>0 1 * * 1</code>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+    <a routerLink="/angular-example" class="btn" style="background: #e5e7eb;">← Back</a>
+    <a routerLink="/secrets" class="btn btn-primary">Next: Secrets →</a>
+</div>
