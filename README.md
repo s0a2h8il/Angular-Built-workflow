@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # GithubActionsGuide
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
@@ -57,7 +58,8 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
+# For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
 # Angular-Built-workflow
->>>>>>> 3d16c4bbfa9736d6d2a0559023658115cfa07249
+
+> > > > > > > 3d16c4bbfa9736d6d2a0559023658115cfa07249
